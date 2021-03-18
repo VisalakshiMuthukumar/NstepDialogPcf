@@ -1,5 +1,5 @@
 ﻿Overview
-A simple PCF control that showcases an N step dialog experience, based out of React ‘Context sharing’ concepts.
+A simple React based PCF control that showcases an N step dialog experience where data is effectively shared among components via context sharing
 
 Getting Started
 • Check out basics of PowerApps Component framework
