@@ -27,8 +27,8 @@ const N_StepDialogComponent = ({pcfContext, isOpen, setIsOpen}: INStepProps) => 
             }
         ]}
         Stepper={Stepper}
-        Footer={<Footer  />}
-        headerText={"Sample N-Step"}
+        Footer={<Footer shouldDisableNext={shouldDisableNext} />}
+        headerText={"N step dialog"}
         onDismiss={() => setIsOpen(false)}
         />
       );

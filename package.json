@@ -11,7 +11,7 @@
   "dependencies": {
     "@types/node": "^10.12.18",
     "@types/powerapps-component-framework": "^1.2.0",
-    "multistep-wizard-fluent": "1.0.7",
+    "multistep-wizard-fluent": "^1.1.0",
     "office-ui-fabric-react": "^7.149.4"
   },
   "devDependencies": {
