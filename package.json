@@ -5,6 +5,7 @@
   "scripts": {
     "build": "pcf-scripts build",
     "clean": "pcf-scripts clean",
+    "lint": "eslint NStepDialogPcfComponent/**/*.{js,ts,tsx} --quiet --fix",
     "rebuild": "pcf-scripts rebuild",
     "start": "pcf-scripts start"
   },
@@ -15,7 +16,18 @@
     "office-ui-fabric-react": "^7.149.4"
   },
   "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^4.18.0",
+    "@typescript-eslint/parser": "^4.18.0",
+    "eslint": "^7.22.0",
+    "eslint-config-prettier": "^8.1.0",
+    "eslint-config-standard": "^16.0.2",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-prettier": "^3.3.1",
+    "eslint-plugin-promise": "^4.3.1",
+    "eslint-plugin-react": "^7.22.0",
     "pcf-scripts": "^1",
-    "pcf-start": "^1"
+    "pcf-start": "^1",
+    "prettier": "^2.2.1"
   }
 }
