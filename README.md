@@ -14,7 +14,7 @@ The stepper and N step wizard experience used in the PCF have been published as 
 ## Usage
 - The PCF exposes an N step dialog which opens up on a button click and is controlled by state.
 - Each step in the wizard is configured to display a react component with a custom label.
-- The PCF uses the default stepper and footer exposed by the *multistep-wizard-fluent* Nuget package.
+- The PCF uses the default stepper and footer exposed by the *multistep-wizard-fluent* NPM package.
 - A cache provider that wraps all the components in the dialog is used to maintain a shared cache context whose data can be read/updated by any of those components through React hooks.
 - The NavContext exposed by the *multistep-wizard-fluent* package can also be accessed from any component to read/update the active step information.
 
