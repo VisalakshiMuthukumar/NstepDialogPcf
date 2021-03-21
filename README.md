@@ -1,5 +1,6 @@
 ﻿## Overview
-A simple React based PCF control that showcases an N step dialog experience where data is effectively cached and shared among components via context sharing.
+A simple React based PCF control that showcases an N step dialog experience where data is effectively cached and shared among components via context sharing. 
+(As seen on [PCF Gallery](https://pcf.gallery/n-step-dialog/))
 
 ## Getting Started
 - Check out basics of [PowerApps Component framework](https://docs.microsoft.com/en-us/powerapps/developer/component-framework/overview)
