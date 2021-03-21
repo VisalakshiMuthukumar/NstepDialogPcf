@@ -2,9 +2,9 @@ import * as React from "react";
 import { CacheContext } from "../Cache/CacheContext";
 import { INStepProps } from "../types";
 import { Wizard, Stepper, Footer } from "multistep-wizard-fluent";
-import PersonalDetailsComponent from "./PersonalDetails";
-import AddressInfoComponent from "./AddressInfo";
-import ReviewComponent from "./Review";
+import PersonalDetails from "./PersonalDetails";
+import AddressInfo from "./AddressInfo";
+import Review from "./Review";
 
 const NStepDialog = ({ pcfContext, isOpen, setIsOpen }: INStepProps) => {
   const { shouldDisableNext } = React.useContext(CacheContext);
@@ -15,15 +15,15 @@ const NStepDialog = ({ pcfContext, isOpen, setIsOpen }: INStepProps) => {
       steps={[
         {
           label: "Personal Details",
-          element: React.createElement(PersonalDetailsComponent),
+          element: React.createElement(PersonalDetails),
         },
         {
           label: "Address info",
-          element: React.createElement(AddressInfoComponent),
+          element: React.createElement(AddressInfo),
         },
         {
           label: "Review",
-          element: React.createElement(ReviewComponent),
+          element: React.createElement(Review),
         },
       ]}
       Stepper={Stepper}

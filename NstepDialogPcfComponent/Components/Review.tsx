@@ -2,8 +2,8 @@ import * as React from "react";
 import { NavContext } from "multistep-wizard-fluent";
 import { Link, Stack } from "office-ui-fabric-react";
 import { CacheContext } from "../Cache/CacheContext";
-import AddressInfoComponent from "./AddressInfo";
-import PersonalDetailsComponent from "./PersonalDetails";
+import AddressInfo from "./AddressInfo";
+import PersonalDetails from "./PersonalDetails";
 
 const Review = () => {
   const { cacheValue, setCacheValue } = React.useContext(CacheContext);
@@ -26,7 +26,7 @@ const Review = () => {
       </div>
       <Stack tokens={{ childrenGap: 150 }} horizontal={true}>
         <Stack.Item>
-          <PersonalDetailsComponent readOnly={true} />
+          <PersonalDetails readOnly={true} />
         </Stack.Item>
         <Stack.Item>
           <Link
@@ -40,7 +40,7 @@ const Review = () => {
       </Stack>
       <Stack tokens={{ childrenGap: 10 }} horizontal={true}>
         <Stack.Item>
-          <AddressInfoComponent readOnly={true} />
+          <AddressInfo readOnly={true} />
         </Stack.Item>
         <Stack.Item>
           <Link

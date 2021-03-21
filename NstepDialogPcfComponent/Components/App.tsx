@@ -16,7 +16,7 @@ export const App = ({ pcfContext }: AppProps) => {
           pcfContext={pcfContext}
           isOpen={isOpen}
           setIsOpen={setIsOpen}
-        ></NStepDialog>
+        />
       </CacheProvider>
     </div>
   );

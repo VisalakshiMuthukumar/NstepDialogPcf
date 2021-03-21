@@ -7,12 +7,6 @@ import { ScreenProps } from "../types";
 const PersonalDetails = ({ readOnly }: ScreenProps) => {
   const { cacheValue, setCacheValue } = React.useContext(CacheContext);
   const navContext = React.useContext(NavContext);
-  React.useEffect(() => {
-    setCacheValue({
-      ...cacheValue,
-      activeStage: navContext.stepDetails.currentPageIndex,
-    });
-  }, [navContext.stepDetails.currentPageIndex]);
   return (
     <>
       {!readOnly && (
