@@ -1,19 +1,11 @@
 import * as React from "react";
 import { NavContext } from "multistep-wizard-fluent";
 import { Link, Stack } from "office-ui-fabric-react";
-import { CacheContext } from "../Cache/CacheContext";
 import AddressInfo from "./AddressInfo";
 import PersonalDetails from "./PersonalDetails";
 
 const Review = () => {
-  const { cacheValue, setCacheValue } = React.useContext(CacheContext);
   const navContext = React.useContext(NavContext);
-  React.useEffect(() => {
-    setCacheValue({
-      ...cacheValue,
-      activeStage: navContext.stepDetails.currentPageIndex,
-    });
-  }, [navContext.stepDetails.currentPageIndex]);
   const jumpToStep = (step: number) => {
     navContext.setStepDetails({ currentPageIndex: step });
   };
