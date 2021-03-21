@@ -12,12 +12,12 @@ export const CacheProvider: React.FunctionComponent<ICacheProviderProps> = (
   const [cacheValue, setCacheValue] = React.useState<ICacheValue | undefined>(
     undefined
   );
-  const shouldDisableNext = () => {
+  const shouldDisableNext = React.useCallback(() => {
     // Custom checks to enable/disable stage movement go here
     return (
       cacheValue?.activeStage === 0 && !cacheValue?.name // Disable next button if user is on stage 1 and name field is empty
     );
-  };
+  }, [cacheValue]);
 
   return (
     <CacheContext.Provider
