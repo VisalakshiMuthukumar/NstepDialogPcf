@@ -15,15 +15,15 @@ const NStepDialog = ({ pcfContext, isOpen, setIsOpen }: INStepProps) => {
       steps={[
         {
           label: "Personal Details",
-          element: React.createElement(PersonalDetails),
+          element: <PersonalDetails />,
         },
         {
           label: "Address info",
-          element: React.createElement(AddressInfo),
+          element: <AddressInfo />,
         },
         {
           label: "Review",
-          element: React.createElement(Review),
+          element: <Review />,
         },
       ]}
       Stepper={Stepper}
